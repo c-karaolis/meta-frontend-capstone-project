@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import Logo from "../../images/Logo.svg";
 import MenuIcon from "../../images/icon_hamburger menu.svg";
-import { useNavigate } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
-  const navigate = useNavigate();
+  const { pathname } = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,15 +25,20 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="logo">
-        <img src={Logo} alt="logo" height={50} onClick={() => navigate("/")} />
+        <Link to="/">
+          <img src={Logo} alt="logo" height={50} />
+        </Link>
       </div>
       <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
         <ul className={`menu-list ${isMenuOpen ? "open" : ""}`}>
           {navLinks.map((link) => (
             <li key={link.id}>
-              <a href={link.link} className="link">
+              <Link
+                to={link.link}
+                className={`${pathname === link.link ? "link active" : "link"}`}
+              >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

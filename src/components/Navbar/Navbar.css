@@ -37,6 +37,16 @@ ul li a {
   font-family: Karla;
   font-size: 1.1em;
 }
+.active {
+  text-decoration: underline !important;
+  color: #495e57 !important;
+  font-weight: bold;
+}
+a:hover,
+a:focus {
+  text-decoration: underline !important;
+  color: #495e57 !important;
+}
 .menu-toggle {
   display: none;
 }
@@ -81,8 +91,19 @@ ul li a {
   ul li a {
     margin-left: 1rem;
     color: #495e57;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-family: Karla;
     font-size: 1.1em;
+  }
+
+  .active {
+    text-decoration: underline !important;
+    color: #495e57 !important;
+    font-weight: bold;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: underline !important;
+    color: #495e57 !important;
   }
 }

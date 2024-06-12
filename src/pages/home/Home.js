@@ -1,7 +1,11 @@
+import Hero from "../../components/Hero/Hero";
+import Specials from "../../components/Specials/Specials";
+
 const Home = () => {
   return (
     <>
-      <p>test</p>
+      <Hero />
+      <Specials />
     </>
   );
 };
