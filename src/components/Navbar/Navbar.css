@@ -39,13 +39,13 @@ ul li a {
 }
 .active {
   text-decoration: underline !important;
-  color: #495e57 !important;
+  color: #495e57;
   font-weight: bold;
 }
-a:hover,
-a:focus {
+.link:hover,
+.link:focus {
   text-decoration: underline !important;
-  color: #495e57 !important;
+  color: #495e57;
 }
 .menu-toggle {
   display: none;

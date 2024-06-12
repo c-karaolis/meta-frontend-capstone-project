@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Navbar";
 import "@testing-library/jest-dom/extend-expect";
 
-test("Navbar is rendered correctly on the screen", () => {
+test("Navbar is rendered", () => {
   render(
     <BrowserRouter>
       <Navbar />
@@ -13,7 +13,6 @@ test("Navbar is rendered correctly on the screen", () => {
 
   expect(screen.getByAltText("logo")).toBeInTheDocument();
 
-  // Check if the links are in the document
   expect(screen.getByText("Home")).toBeInTheDocument();
   expect(screen.getByText("About")).toBeInTheDocument();
   expect(screen.getByText("Menu")).toBeInTheDocument();

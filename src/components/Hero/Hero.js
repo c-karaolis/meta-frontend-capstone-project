@@ -11,12 +11,13 @@ const Hero = () => {
       <div className="hero">
         <div>
           <h1 className="title">Little Lemon</h1>
-          <h2 className="subtitle">Chicago</h2>
+          <h2 className="subtitle">New York</h2>
           <p>
-            Nestled in the heart of bustling Chicago, Little Lemon is where
-            modern flair meets cozy nostalgia. Our diverse, artisanal menu,
-            featuring delectable bruschettas, succulent burgers, and refreshing
-            Greek salads, is a testament to our belief that food is an art.
+            Located in the vibrant core of New York, Little Lemon blends
+            contemporary style with comforting tradition. Our varied,
+            handcrafted menu, which includes delicious bruschettas, juicy
+            burgers, and crisp Greek salads, reflects our conviction that
+            cuisine is a form of art.
           </p>
           <Button
             label={"Reserve a table"}

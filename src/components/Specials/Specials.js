@@ -9,7 +9,7 @@ const specials = [
     id: 1,
     title: "Greek salad",
     description:
-      "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
+      "The famous greek salad of crispy lettuce, peppers, olives and our New York style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
     image:
       "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2018/08/Greek-Salad-main.jpg",
     price: "$12.99",
@@ -41,7 +41,10 @@ const Specials = () => {
     <div className="specials">
       <div className="header-container">
         <h1 className="specials-title">Specials</h1>
-        <Button label={"Online Menu"} onClick={() => navigate("/orders")} />
+        <Button
+          label={"Online Menu"}
+          onClick={() => navigate("/order-online")}
+        />
       </div>
 
       <div className="header-list">
