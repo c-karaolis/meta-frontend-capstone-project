@@ -81,6 +81,7 @@ ul li a {
   .nav.open .menu-list {
     display: flex;
     flex-direction: column;
+    background-color: #f4ce14;
   }
 
   .menu-toggle {

@@ -31,9 +31,9 @@ const Footer = () => {
         </div>
         <div className="footer-contact">
           <p className="footer-title"> CONTACT</p>
-          <p className="footer-item">
-            <address>123 Little Lemon Ave.</address>
-          </p>
+          <address>
+            <p className="footer-item">123 Little Lemon Ave.</p>
+          </address>
           <p className="footer-item"> 999-999-9999</p>
           <p className="footer-item">example.lemon@example.com</p>
         </div>
