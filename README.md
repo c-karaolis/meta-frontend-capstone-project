@@ -1,3 +1,6 @@
+# Created according to the exact requirements of the "Meta Front-End Developer Professional Certificate" and this is the final project for the certificate
+You can view the live version here https://meta-frontend-capstone-project-ivory.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
